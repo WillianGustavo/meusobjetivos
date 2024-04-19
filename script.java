@@ -43,14 +43,17 @@ const tempoObjetivo4 = new Date("2023-02-01T00:00:00");
      function atualizarCronometro(){
        for (let i=0; i<contadores.lenght; i++){
         document.getElementById("dias+1").textContent = calculaTempo(tempos[1])[0];
+        document.getElementById("horas"+i).textContent = calculaTempo(tempos[i])[1];
+        document.getElementById("min"+i).textContent = calculaTempo(tempos[i])[2];
+        document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
+
        }
+     }
        
-       
+       function comecaCronometro(){
         atualizarCronometro();
         setInterval(atualizarCronometro,1000);
-        }
-        for (let i=o; l<contadores.lenght;i++){
-            document.getElementById("dias" +1).textContent = calculaTempo()
-        }
-     }
+       
+       }
 
+    comecaCronometro();

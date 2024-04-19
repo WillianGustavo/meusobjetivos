@@ -72,9 +72,9 @@ body{
  }
  } 
 
-.ativo{
+.botao.ativo{
     background-color: var(--botao-ativo);
-    border-boyyom: 4px solid var(--verde);
+    border-bottom: 4px solid var(--verde);
 }
 
 @media screen and (min-widht:768px) {
@@ -110,6 +110,20 @@ body{
         }
 
         .aba-conteudo-titulo-secundario{
-            text-align: ;
+            text-align: center;
+            color: var(--verde);
+            text-transform: uppercase;
         }
-}
+
+        .contador{
+            display:flex;
+            justify-content:center;
+            flex-wrap: wrap;
+        }
+
+        .contador-digito{
+            padding: 0 16px;
+            text-align: center;
+            min-width: 100px;
+        }
+    }
